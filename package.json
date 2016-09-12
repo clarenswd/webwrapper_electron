@@ -1,0 +1,19 @@
+{
+  "name": "webWrapper",
+  "productName":"webWrapper",
+  "version": "1.0.0",
+  "description": "build a web app first then wrap it",
+  "main": "src/main.js",
+  "scripts": {
+    "build" : "rimraf ipc-demo-* && electron-packager . --platform=darwin --arch=x64 --icon=app",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-packager": "^8.0.0",
+    "electron-prebuilt": "^1.3.5",
+    "rimraf": "^2.5.4"
+  }
+}
